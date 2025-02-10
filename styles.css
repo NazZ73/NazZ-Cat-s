@@ -283,3 +283,36 @@ footer {
     margin-bottom: 10px;
     border-radius: 50%;
 }
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content > div {
+        margin: 15px 0;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .social-icon {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .social-icon img {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
