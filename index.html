@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NazZ 🐾 Cat's| Cat Breed Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NazZ 🐾 Cat's</h1>
+            <p>Discover Your Ideal Feline Friend</p>
+            <div class="search-filter-container">
+                <input type="text" id="search-input" placeholder="Search cat breeds...">
+                
+                <div class="filters">
+                    <select id="size-filter">
+                        <option value="">All Sizes</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+
+                    <select id="coat-filter">
+                        <option value="">All Coats</option>
+                        <option value="Short">Short</option>
+                        <option value="Long">Long</option>
+                        <option value="Medium">Medium</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main id="cat-breeds-container">
+            <!-- Cat breeds will be dynamically inserted here -->
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="cat-associations">
+                    <h3>Cat Breed Associations</h3>
+                    <div id="association-stats"></div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://tica.org" target="_blank">TICA Website</a></li>
+                        <li><a href="https://cfa.org" target="_blank">CFA Website</a></li>
+                    </ul>
+                </div>
+                <div class="developer-social">
+                    <h3>Connect with Developer</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/15EBaGiVrv/" target="_blank" class="social-icon">NazZ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NazZ 🐾 Cat's. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="cat-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="cat-details-content"></div>
+            <div id="wikipedia-section" class="wikipedia-container">
+                <h3>Wikipedia Information</h3>
+                <p id="wikipedia-excerpt">Loading Wikipedia information...</p>
+                <a id="wikipedia-link" href="#" target="_blank">Read more on Wikipedia</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
